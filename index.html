@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IPS Parent Council</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-users"></i> IPS Parent Council
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://docs.google.com/forms/d/1srv0nQZRU6ozsaZHAvI7FV5M6Co0rmkNBevZTteIzxM/viewform?edit_requested=true" target="_blank">Join Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="vh-100 d-flex align-items-center justify-content-center bg-light">
+        <div class="text-center">
+            <h1 class="display-4"><i class="fas fa-school"></i> Welcome to IPS Parent Council</h1>
+            <p class="lead">Advocating for district-run public schools in Indianapolis, Indiana.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">
+                The IPS Parent Council is a parent-run organization dedicated to distilling information, contacting legislators, and attending legislative hearings to advocate for district-run public schools in Indianapolis, Indiana. 
+                We aim to empower parents and community members with the tools and resources needed to make a positive impact on public education.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4" style="display: none;">Contact Us</h2>
+            <div class="d-flex justify-content-center">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfE3-CmboHhoVCCL07NU5Y9V_U0WgbJzNuBU6CK1-0HWuukDQ/viewform?embedded=true" 
+                        width="800" 
+                        height="900" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; <span id="currentYear"></span> IPS Parent Council. All Rights Reserved.</p>
+            <p class="small mb-0">
+                <i class="fas fa-envelope"></i> Contact us at: <a href="mailto:info@ips-parent-council.org" class="text-white">info@ips-parent-council.org</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script to Update Footer Year Dynamically -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
